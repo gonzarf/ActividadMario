@@ -45,9 +45,10 @@
         >
 
         <EditText
+            android:id="@+id/n"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="USUARIO"/>
+            android:hint="USUARIO" />
 
     </com.google.android.material.textfield.TextInputLayout>
 

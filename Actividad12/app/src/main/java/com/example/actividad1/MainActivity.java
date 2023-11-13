@@ -26,24 +26,28 @@ public class MainActivity extends AppCompatActivity {
             alert.setTitle("RECUPERACIÓN DE CONTRASEÑA");
             alert.setMessage("Introduzca correo de recuperación");
 
-            EditText resetemail = new EditText(this);
-            resetemail.setInputType(InputType.TYPE_CLASS_TEXT);
-            resetemail.setHint("correo@example.com");
-
-            alert.setView(resetemail);
+                EditText password = new EditText(this);
+                password.setInputType(InputType.TYPE_CLASS_TEXT);
+                password.setHint("correo@example.com");
+            alert.setView(password);
 
             alert.setPositiveButton("CONFIRMAR", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i) {
-                    Toast.makeText(MainActivity.this, "Bien", Toast.LENGTH_SHORT).show();
+                    if (!password.getText().toString().isEmpty()){
+                        Toast.makeText(MainActivity.this, "Correo enviado correctamente a " + password.getText().toString() , Toast.LENGTH_SHORT).show();
+
+                    }else {
+                        Toast.makeText(MainActivity.this, "Introduzca un correo", Toast.LENGTH_SHORT).show();
+                    }
                 }
             });
             alert.setNegativeButton("CANCELAR", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i) {
-                    Toast.makeText(MainActivity.this, "Mal", Toast.LENGTH_SHORT).show();
                 }
             });
             alert.create().show();
+
     }
 }
