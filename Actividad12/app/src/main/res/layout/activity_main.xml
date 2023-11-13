@@ -71,6 +71,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:inputType="textPassword"
             android:hint="CONTRASEÑA"/>
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -79,9 +80,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:text="RECUÉRDAME"
         app:layout_constraintStart_toEndOf="@id/v1"
         app:layout_constraintTop_toBottomOf="@id/hcontra"
         app:layout_constraintBottom_toTopOf="@id/hcheckbox"/>
+
+    <TextView
+        android:id="@+id/resetpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Olvide mi contarseña"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:onClick="showalert"
+        android:textColor="@color/material_dynamic_primary40"
+        app:layout_constraintEnd_toStartOf="@id/v2"
+        app:layout_constraintTop_toBottomOf="@id/hcontra"
+        app:layout_constraintBottom_toTopOf="@id/hcheckbox"
+        />
 
 
     <androidx.constraintlayout.widget.Guideline
