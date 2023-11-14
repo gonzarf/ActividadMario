@@ -101,6 +101,39 @@
         />
 
 
+    <Button
+        android:id="@+id/botonentrar"
+        android:layout_width="200dp"
+        android:layout_height="58dp"
+        android:text="ENTRAR"
+        app:layout_constraintTop_toBottomOf="@id/h1botones"
+        app:layout_constraintBottom_toTopOf="@id/botonregistrar"
+        app:layout_constraintStart_toEndOf="@id/v1"
+        app:layout_constraintEnd_toStartOf="@id/v2" />
+
+    <Button
+        android:id="@+id/botonregistrar"
+        android:layout_width="200dp"
+        android:layout_height="58dp"
+        android:text="REGISTRARSE"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/botonentrar"
+        app:layout_constraintBottom_toTopOf="@id/h2botones"
+        app:layout_constraintStart_toEndOf="@id/v1"
+        app:layout_constraintEnd_toStartOf="@id/v2" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/v1"
+        app:layout_constraintEnd_toStartOf="@id/v2"
+        android:text="© 2023 SoccerScout | GPLv3 "
+
+        />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/hlogo"
         android:layout_width="match_parent"
@@ -151,17 +184,31 @@
         app:layout_constraintGuide_percent="0.65" />
 
     <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h1botones"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h2botones"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.87" />
+
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/v1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.1" />
+        app:layout_constraintGuide_percent="0.04" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/v2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.9" />
+        app:layout_constraintGuide_percent="0.96" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
