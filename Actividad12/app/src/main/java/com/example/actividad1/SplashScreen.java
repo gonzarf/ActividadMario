@@ -23,12 +23,14 @@ public class SplashScreen extends AppCompatActivity {
         openLogin();
 
         ImageView logoSplash = findViewById(R.id.logoSplash);
+        TextView appName = findViewById(R.id.nombreAppSplash);
 
         Animation fadeAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_in);
         logoSplash.startAnimation(fadeAnimation);
+        appName.startAnimation(fadeAnimation);
 
-        ImageView background = findViewById(R.id.backgroundSplash);
-        /*Glide.with(this)
+        /*ImageView background = findViewById(R.id.backgroundSplash);
+        Glide.with(this)
                 .load("https://images.unsplash.com/photo-1533240332313-0db49b459ad6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80")
                 .transition(DrawableTransitionOptions.withCrossFade(3000))
                 .centerCrop()
@@ -43,7 +45,9 @@ public class SplashScreen extends AppCompatActivity {
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
+
             }
         }, 3000);
     }
+
 }
