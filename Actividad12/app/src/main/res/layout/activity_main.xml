@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#e1e5f2"
     tools:context=".MainActivity">
 
     <ImageView
@@ -13,21 +14,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/h2logo"
-        android:src="@drawable/huella"
+        android:src="@drawable/estadio"
         />
 
     <TextView
         android:id="@+id/nombreApp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:fontFamily="@font/ffinish"
         android:text="@string/app_name"
-        android:fontFamily="@font/classicaldiary"
-        app:layout_constraintTop_toBottomOf="@id/hlogo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/md_theme_light_primary"
+        android:textSize="55dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@id/hnombre"
-        android:textSize="40dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hlogo" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="0dp"
@@ -36,11 +38,7 @@
         app:layout_constraintBottom_toTopOf="@id/h1registro"
         app:layout_constraintStart_toEndOf="@+id/v1"
         app:layout_constraintEnd_toStartOf="@id/v2"
-        app:hintTextColor="@color/pino_oscuro"
-        app:startIconTint="@color/pino_oscuro"
         app:startIconDrawable="@drawable/user_icon"
-        app:suffixTextColor="@color/pino_oscuro"
-        app:cursorColor="@color/pino_oscuro"
         app:boxStrokeColor="@color/material_dynamic_primary30"
         >
 
@@ -61,12 +59,7 @@
         app:layout_constraintStart_toEndOf="@+id/v1"
         app:layout_constraintEnd_toStartOf="@id/v2"
         app:passwordToggleEnabled="true"
-        app:hintTextColor="@color/pino_oscuro"
-        app:startIconTint="@color/pino_oscuro"
         app:startIconDrawable="@drawable/password_icon"
-        app:suffixTextColor="@color/pino_oscuro"
-        app:cursorColor="@color/pino_oscuro"
-        app:boxStrokeColor="@color/material_dynamic_primary30"
         >
 
         <EditText
@@ -139,7 +132,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.2" />
+        app:layout_constraintGuide_percent="0.22" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/h2logo"
@@ -153,7 +146,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.3" />
+        app:layout_constraintGuide_percent="0.37" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/h1registro"
